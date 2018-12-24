@@ -834,9 +834,9 @@ static int share_result(int result, struct work *work, const char *reason)
 		:	(result ? "(" YAY ")" : "(" BOO ")");
 	}
 
-	if (opt_showdiff)
+	/*if (opt_showdiff)
 		sprintf(suppl, "diff %.3f", sharediff);
-	else // accepted percent
+	else*/ // accepted percent
 		sprintf(suppl, "%.2f%%", 100. * accepted_count / (accepted_count + rejected_count));
 
 	switch (opt_algo) {
@@ -845,7 +845,8 @@ static int share_result(int result, struct work *work, const char *reason)
 		//sprintf(s, hashrate >= 1e6 ? "%.0f" : "%.2f", hashrate / 1000.0);
 		sprintf(s, hashrate >= 1e6 ? "%.0f" : "%.2f", hashrate);
 		//applog(LOG_NOTICE, "accepted: %lu/%lu (%s), %s kH/s %s",
-		applog(LOG_NOTICE, "accepted: %lu/%lu (%s), %s H/s %s",
+		//applog(LOG_NOTICE, "accepted: %lu/%lu (%s), %s H/s %s",
+		applog(LOG_NOTICE, "accepted: %lu/%lu, %s H/s %s",
 			accepted_count, accepted_count + rejected_count,
 			suppl, s, flag);
 		break;
@@ -2033,7 +2034,7 @@ static void *stratum_thread(void *userdata)
 	stratum.url = (char*) tq_pop(mythr->q, NULL);
 	if (!stratum.url)
 		goto out;
-	applog(LOG_INFO, "Starting Stratum on %s", stratum.url);
+	applog(LOG_INFO, "Connecting to %s", stratum.url);
 
 	while (1) {
 		int failures = 0;
@@ -2046,7 +2047,7 @@ static void *stratum_thread(void *userdata)
 				stratum.url = strdup(rpc_url);
 				applog(LOG_BLUE, "Connection changed to %s", short_url);
 			} else if (!opt_quiet) {
-				applog(LOG_DEBUG, "Stratum connection reset");
+				applog(LOG_DEBUG, "Connection reset");
 			}
 		}
 
@@ -2639,7 +2640,9 @@ static int thread_create(struct thr_info *thr, void* func)
 
 static void show_credits()
 {
-	printf("** " PACKAGE_NAME " " PACKAGE_VERSION " by QuantumLeaper **\n");
+	printf("**********************************************************\n");
+	printf("*** " PACKAGE_NAME " v" PACKAGE_VERSION " by QuantumLeaper @ uPlexa.com ***\n");
+	printf("**********************************************************\n");
 }
 
 void get_defconfig_path(char *out, size_t bufsize, char *argv0);
@@ -2697,10 +2700,10 @@ int main(int argc, char *argv[]) {
 		jsonrpc_2 = true;
 		opt_extranonce = false;
 		aes_ni_supported = has_aes_ni();
-		if (!opt_quiet) {
+		//if (!opt_quiet) {
 			applog(LOG_INFO, "Using JSON-RPC 2.0");
 			applog(LOG_INFO, "CPU Supports AES-NI: %s", aes_ni_supported ? "YES" : "NO");
-		}
+		//}
 	}
 
 	if (!opt_benchmark && !rpc_url) {
@@ -2884,8 +2887,8 @@ int main(int argc, char *argv[]) {
 		}
 	}
 
-	applog(LOG_INFO, "%d miner threads started, "
-		"using '%s' algorithm.",
+	applog(LOG_INFO, "Mining on %d threads. "
+		"Using '%s' algorithm.",
 		opt_n_threads,
 		algo_names[opt_algo]);
 

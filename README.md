@@ -2,7 +2,7 @@ Toaster-Miner
 ==============
 
 This is a multi-threaded CPU miner that is used for uPlexa PoC IoT Mining
-fork of [pooler](//github.com/pooler)'s toasterminer (see AUTHORS for list of contributors).
+fork of [pooler](//github.com/pooler)'s cpuminer-multi (see AUTHORS for list of contributors).
 
 This is a raw, unoptimized Miner to be used with x86 systems or older ARM devices.
 If you have an x64/ARMv7+ device, we recommend using [XMRig-UPX](https://github.com/uPlexa/xmrig-upx)
