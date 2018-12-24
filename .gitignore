@@ -1,7 +1,6 @@
 minerd*
 toasterminer
 *.exe
-*.o
 *.d
 gmon.out
 
@@ -49,4 +48,3 @@ res/RC*
 sign/
 sign.sh
 
-compat/curl-for-windows/

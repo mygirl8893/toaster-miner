@@ -1,0 +1,63 @@
+make  all-recursive
+make[1]: Entering directory '/home/eggnog/dev/toaster-miner'
+Making all in compat
+make[2]: Entering directory '/home/eggnog/dev/toaster-miner/compat'
+make[3]: Entering directory '/home/eggnog/dev/toaster-miner/compat'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/home/eggnog/dev/toaster-miner/compat'
+make[2]: Leaving directory '/home/eggnog/dev/toaster-miner/compat'
+make[2]: Entering directory '/home/eggnog/dev/toaster-miner'
+gcc -DHAVE_CONFIG_H -I.  -fno-strict-aliasing  -I.  -Wno-pointer-sign -Wno-pointer-to-int-cast   -g -O2  -MT toasterminer-toaster-miner.o -MD -MP -MF .deps/toasterminer-toaster-miner.Tpo -c -o toasterminer-toaster-miner.o `test -f 'toaster-miner.c' || echo './'`toaster-miner.c
+mv -f .deps/toasterminer-toaster-miner.Tpo .deps/toasterminer-toaster-miner.Po
+gcc -DHAVE_CONFIG_H -I.  -fno-strict-aliasing  -I.  -Wno-pointer-sign -Wno-pointer-to-int-cast   -g -O2  -MT toasterminer-util.o -MD -MP -MF .deps/toasterminer-util.Tpo -c -o toasterminer-util.o `test -f 'util.c' || echo './'`util.c
+mv -f .deps/toasterminer-util.Tpo .deps/toasterminer-util.Po
+gcc -DHAVE_CONFIG_H -I.  -fno-strict-aliasing  -I.  -Wno-pointer-sign -Wno-pointer-to-int-cast   -g -O2  -MT toasterminer-api.o -MD -MP -MF .deps/toasterminer-api.Tpo -c -o toasterminer-api.o `test -f 'api.c' || echo './'`api.c
+mv -f .deps/toasterminer-api.Tpo .deps/toasterminer-api.Po
+gcc -DHAVE_CONFIG_H -I.  -fno-strict-aliasing  -I.  -Wno-pointer-sign -Wno-pointer-to-int-cast   -g -O2  -MT toasterminer-sysinfos.o -MD -MP -MF .deps/toasterminer-sysinfos.Tpo -c -o toasterminer-sysinfos.o `test -f 'sysinfos.c' || echo './'`sysinfos.c
+mv -f .deps/toasterminer-sysinfos.Tpo .deps/toasterminer-sysinfos.Po
+g++ -DHAVE_CONFIG_H -I.  -fno-strict-aliasing  -I.   -g -O2 -MT toasterminer-uint256.o -MD -MP -MF .deps/toasterminer-uint256.Tpo -c -o toasterminer-uint256.o `test -f 'uint256.cpp' || echo './'`uint256.cpp
+mv -f .deps/toasterminer-uint256.Tpo .deps/toasterminer-uint256.Po
+gcc -DHAVE_CONFIG_H -I.  -fno-strict-aliasing  -I.  -Wno-pointer-sign -Wno-pointer-to-int-cast   -g -O2  -MT crypto/toasterminer-oaes_lib.o -MD -MP -MF crypto/.deps/toasterminer-oaes_lib.Tpo -c -o crypto/toasterminer-oaes_lib.o `test -f 'crypto/oaes_lib.c' || echo './'`crypto/oaes_lib.c
+mv -f crypto/.deps/toasterminer-oaes_lib.Tpo crypto/.deps/toasterminer-oaes_lib.Po
+gcc -DHAVE_CONFIG_H -I.  -fno-strict-aliasing  -I.  -Wno-pointer-sign -Wno-pointer-to-int-cast   -g -O2  -MT crypto/toasterminer-c_keccak.o -MD -MP -MF crypto/.deps/toasterminer-c_keccak.Tpo -c -o crypto/toasterminer-c_keccak.o `test -f 'crypto/c_keccak.c' || echo './'`crypto/c_keccak.c
+mv -f crypto/.deps/toasterminer-c_keccak.Tpo crypto/.deps/toasterminer-c_keccak.Po
+gcc -DHAVE_CONFIG_H -I.  -fno-strict-aliasing  -I.  -Wno-pointer-sign -Wno-pointer-to-int-cast   -g -O2  -MT crypto/toasterminer-c_groestl.o -MD -MP -MF crypto/.deps/toasterminer-c_groestl.Tpo -c -o crypto/toasterminer-c_groestl.o `test -f 'crypto/c_groestl.c' || echo './'`crypto/c_groestl.c
+mv -f crypto/.deps/toasterminer-c_groestl.Tpo crypto/.deps/toasterminer-c_groestl.Po
+gcc -DHAVE_CONFIG_H -I.  -fno-strict-aliasing  -I.  -Wno-pointer-sign -Wno-pointer-to-int-cast   -g -O2  -MT crypto/toasterminer-c_blake256.o -MD -MP -MF crypto/.deps/toasterminer-c_blake256.Tpo -c -o crypto/toasterminer-c_blake256.o `test -f 'crypto/c_blake256.c' || echo './'`crypto/c_blake256.c
+mv -f crypto/.deps/toasterminer-c_blake256.Tpo crypto/.deps/toasterminer-c_blake256.Po
+gcc -DHAVE_CONFIG_H -I.  -fno-strict-aliasing  -I.  -Wno-pointer-sign -Wno-pointer-to-int-cast   -g -O2  -MT crypto/toasterminer-c_jh.o -MD -MP -MF crypto/.deps/toasterminer-c_jh.Tpo -c -o crypto/toasterminer-c_jh.o `test -f 'crypto/c_jh.c' || echo './'`crypto/c_jh.c
+mv -f crypto/.deps/toasterminer-c_jh.Tpo crypto/.deps/toasterminer-c_jh.Po
+gcc -DHAVE_CONFIG_H -I.  -fno-strict-aliasing  -I.  -Wno-pointer-sign -Wno-pointer-to-int-cast   -g -O2  -MT crypto/toasterminer-c_skein.o -MD -MP -MF crypto/.deps/toasterminer-c_skein.Tpo -c -o crypto/toasterminer-c_skein.o `test -f 'crypto/c_skein.c' || echo './'`crypto/c_skein.c
+mv -f crypto/.deps/toasterminer-c_skein.Tpo crypto/.deps/toasterminer-c_skein.Po
+gcc -DHAVE_CONFIG_H -I.  -fno-strict-aliasing  -I.  -Wno-pointer-sign -Wno-pointer-to-int-cast   -g -O2  -MT crypto/toasterminer-hash.o -MD -MP -MF crypto/.deps/toasterminer-hash.Tpo -c -o crypto/toasterminer-hash.o `test -f 'crypto/hash.c' || echo './'`crypto/hash.c
+mv -f crypto/.deps/toasterminer-hash.Tpo crypto/.deps/toasterminer-hash.Po
+gcc -DHAVE_CONFIG_H -I.  -fno-strict-aliasing  -I.  -Wno-pointer-sign -Wno-pointer-to-int-cast   -g -O2  -MT crypto/toasterminer-aesb.o -MD -MP -MF crypto/.deps/toasterminer-aesb.Tpo -c -o crypto/toasterminer-aesb.o `test -f 'crypto/aesb.c' || echo './'`crypto/aesb.c
+mv -f crypto/.deps/toasterminer-aesb.Tpo crypto/.deps/toasterminer-aesb.Po
+gcc -DHAVE_CONFIG_H -I.  -fno-strict-aliasing  -I.  -Wno-pointer-sign -Wno-pointer-to-int-cast   -g -O2  -MT algo/toasterminer-blake.o -MD -MP -MF algo/.deps/toasterminer-blake.Tpo -c -o algo/toasterminer-blake.o `test -f 'algo/blake.c' || echo './'`algo/blake.c
+mv -f algo/.deps/toasterminer-blake.Tpo algo/.deps/toasterminer-blake.Po
+gcc -DHAVE_CONFIG_H -I.  -fno-strict-aliasing  -I.  -Wno-pointer-sign -Wno-pointer-to-int-cast   -g -O2  -MT algo/toasterminer-blake2.o -MD -MP -MF algo/.deps/toasterminer-blake2.Tpo -c -o algo/toasterminer-blake2.o `test -f 'algo/blake2.c' || echo './'`algo/blake2.c
+mv -f algo/.deps/toasterminer-blake2.Tpo algo/.deps/toasterminer-blake2.Po
+gcc -DHAVE_CONFIG_H -I.  -fno-strict-aliasing  -I.  -Wno-pointer-sign -Wno-pointer-to-int-cast   -g -O2  -MT algo/toasterminer-cryptonight.o -MD -MP -MF algo/.deps/toasterminer-cryptonight.Tpo -c -o algo/toasterminer-cryptonight.o `test -f 'algo/cryptonight.c' || echo './'`algo/cryptonight.c
+mv -f algo/.deps/toasterminer-cryptonight.Tpo algo/.deps/toasterminer-cryptonight.Po
+gcc -DHAVE_CONFIG_H -I.  -fno-strict-aliasing  -I.  -Wno-pointer-sign -Wno-pointer-to-int-cast   -g -O2  -MT algo/toasterminer-cryptoupx.o -MD -MP -MF algo/.deps/toasterminer-cryptoupx.Tpo -c -o algo/toasterminer-cryptoupx.o `test -f 'algo/cryptoupx.c' || echo './'`algo/cryptoupx.c
+mv -f algo/.deps/toasterminer-cryptoupx.Tpo algo/.deps/toasterminer-cryptoupx.Po
+gcc -DHAVE_CONFIG_H -I.  -fno-strict-aliasing  -I.  -Wno-pointer-sign -Wno-pointer-to-int-cast   -g -O2  -MT algo/toasterminer-groestl.o -MD -MP -MF algo/.deps/toasterminer-groestl.Tpo -c -o algo/toasterminer-groestl.o `test -f 'algo/groestl.c' || echo './'`algo/groestl.c
+mv -f algo/.deps/toasterminer-groestl.Tpo algo/.deps/toasterminer-groestl.Po
+gcc -DHAVE_CONFIG_H -I.  -fno-strict-aliasing  -I.  -Wno-pointer-sign -Wno-pointer-to-int-cast   -g -O2  -MT algo/toasterminer-keccak.o -MD -MP -MF algo/.deps/toasterminer-keccak.Tpo -c -o algo/toasterminer-keccak.o `test -f 'algo/keccak.c' || echo './'`algo/keccak.c
+mv -f algo/.deps/toasterminer-keccak.Tpo algo/.deps/toasterminer-keccak.Po
+gcc -DHAVE_CONFIG_H -I.  -fno-strict-aliasing  -I.  -Wno-pointer-sign -Wno-pointer-to-int-cast   -g -O2  -MT algo/toasterminer-sha2.o -MD -MP -MF algo/.deps/toasterminer-sha2.Tpo -c -o algo/toasterminer-sha2.o `test -f 'algo/sha2.c' || echo './'`algo/sha2.c
+mv -f algo/.deps/toasterminer-sha2.Tpo algo/.deps/toasterminer-sha2.Po
+gcc -DHAVE_CONFIG_H -I.  -fno-strict-aliasing  -I.  -Wno-pointer-sign -Wno-pointer-to-int-cast   -g -O2  -MT algo/toasterminer-skein.o -MD -MP -MF algo/.deps/toasterminer-skein.Tpo -c -o algo/toasterminer-skein.o `test -f 'algo/skein.c' || echo './'`algo/skein.c
+mv -f algo/.deps/toasterminer-skein.Tpo algo/.deps/toasterminer-skein.Po
+gcc -DHAVE_CONFIG_H -I.  -fno-strict-aliasing  -I.  -Wno-pointer-sign -Wno-pointer-to-int-cast   -g -O2  -MT algo/toasterminer-skein2.o -MD -MP -MF algo/.deps/toasterminer-skein2.Tpo -c -o algo/toasterminer-skein2.o `test -f 'algo/skein2.c' || echo './'`algo/skein2.c
+mv -f algo/.deps/toasterminer-skein2.Tpo algo/.deps/toasterminer-skein2.Po
+gcc -DHAVE_CONFIG_H -I.  -fno-strict-aliasing  -I.   -g -O2 -MT asm/toasterminer-sha2-x64.o -MD -MP -MF asm/.deps/toasterminer-sha2-x64.Tpo -c -o asm/toasterminer-sha2-x64.o `test -f 'asm/sha2-x64.S' || echo './'`asm/sha2-x64.S
+mv -f asm/.deps/toasterminer-sha2-x64.Tpo asm/.deps/toasterminer-sha2-x64.Po
+gcc -DHAVE_CONFIG_H -I.  -fno-strict-aliasing  -I.   -g -O2 -MT asm/toasterminer-aesb-x64.o -MD -MP -MF asm/.deps/toasterminer-aesb-x64.Tpo -c -o asm/toasterminer-aesb-x64.o `test -f 'asm/aesb-x64.S' || echo './'`asm/aesb-x64.S
+mv -f asm/.deps/toasterminer-aesb-x64.Tpo asm/.deps/toasterminer-aesb-x64.Po
+g++  -g -O2   -o toasterminer toasterminer-toaster-miner.o toasterminer-util.o toasterminer-api.o toasterminer-sysinfos.o toasterminer-uint256.o crypto/toasterminer-oaes_lib.o crypto/toasterminer-c_keccak.o crypto/toasterminer-c_groestl.o crypto/toasterminer-c_blake256.o crypto/toasterminer-c_jh.o crypto/toasterminer-c_skein.o crypto/toasterminer-hash.o crypto/toasterminer-aesb.o algo/toasterminer-blake.o algo/toasterminer-blake2.o algo/toasterminer-cryptonight.o algo/toasterminer-cryptoupx.o algo/toasterminer-groestl.o algo/toasterminer-keccak.o algo/toasterminer-sha2.o algo/toasterminer-skein.o algo/toasterminer-skein2.o  asm/toasterminer-sha2-x64.o asm/toasterminer-aesb-x64.o   -ljansson -lpthread  -lz 
+Makefile:641: recipe for target 'toasterminer' failed
+make[2]: Leaving directory '/home/eggnog/dev/toaster-miner'
+Makefile:1173: recipe for target 'all-recursive' failed
+make[1]: Leaving directory '/home/eggnog/dev/toaster-miner'
+Makefile:475: recipe for target 'all' failed
