@@ -114,7 +114,7 @@ When the --proxy option is not used, the program honors the http_proxy and all_p
 
 Credits
 =======
-Toaster-Miner was forked from tpruvot's toasterminer-Multi, and has been started by Lucas Jones.
+Toaster-Miner was forked from tpruvot's cpuminer-Multi, and has been started by Lucas Jones.
 * [tpruvot](https://github.com/tpruvot) added all the recent features and newer algorythmns
 * [Wolf9466](https://github.com/wolf9466) helped with Intel AES-NI support for CryptoNight
 
