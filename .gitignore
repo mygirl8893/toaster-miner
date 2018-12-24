@@ -1,7 +1,6 @@
 minerd*
 toasterminer
 *.exe
-*.o
 *.d
 gmon.out
 
